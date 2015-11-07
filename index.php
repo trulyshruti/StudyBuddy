@@ -74,7 +74,7 @@
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>Study Together</h1>
-                        <h3>Find a Study Group</h3>
+                        <h3>Find a Study Group with StudyBuddy</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
