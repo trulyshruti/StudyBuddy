@@ -48,6 +48,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <!-- BEGIN DEFAULT NAVBAR --
                     <li>
                         <a href="#about">About</a>
                     </li>
@@ -56,6 +57,13 @@
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
+                    </li>
+                    -- END DEFAULT NAVBAR -->
+                    <li>
+                        <a href="#login">Log In</a>
+                    </li>
+                    <li>
+                        <a href="#signup">Sign Up</a>
                     </li>
                 </ul>
             </div>
@@ -74,9 +82,10 @@
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>Study Together</h1>
-                        <h3>Find a Study Group with StudyBuddy</h3>
+                        <h3>Form a Study Group to Study with Your Friends</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
+                            <!-- BEGIN SOCIAL MEDIA BUTTONS -- 
                             <li>
                                 <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                             </li>
@@ -85,6 +94,13 @@
                             </li>
                             <li>
                                 <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            </li>
+                            -- END SOCIAL MEDIA BUTTONS -->
+                            <li>
+                                <a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">Create a Group</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">Find a Group</span></a>
                             </li>
                         </ul>
                     </div>
