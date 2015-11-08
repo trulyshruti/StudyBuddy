@@ -24,6 +24,10 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+<<<<<<< HEAD
+=======
+	
+>>>>>>> origin/master
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
