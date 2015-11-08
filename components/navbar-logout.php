@@ -34,10 +34,7 @@
                     </li>
                     -- END DEFAULT NAVBAR -->
                     <li>
-                        <a href="login.php">Log In</a>
-                    </li>
-                    <li>
-                        <a href="signup.php">Sign Up</a>
+                        <a href="backend/logout.php">Log Out</a>
                     </li>
                 </ul>
             </div>
