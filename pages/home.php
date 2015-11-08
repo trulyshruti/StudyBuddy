@@ -30,10 +30,10 @@
                             </li>
                             -- END SOCIAL MEDIA BUTTONS -->
                             <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">Create a Group</span></a>
+                                <a href='?p=login' class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">Log In</span></a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">Find a Group</span></a>
+                                <a href='?p=signup' class="btn btn-default btn-lg"><i class="fa"></i> <span class="network-name">Sign Up</span></a>
                             </li>
                         </ul>
                     </div>
@@ -56,8 +56,8 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
-                    <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+                    <h2 class="section-heading">Find Groups Near You<!--<br>Special Thanks--></h2>
+                    <p class="lead">Find study groups created by fellow students everywhere, with distances to know how far they are from you.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/ipad.png" alt="">
@@ -78,8 +78,8 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                    <h2 class="section-heading">Chatrooms for Study<!--<br>by PSDCovers--></h2>
+                    <p class="lead">Unique chat rooms are created for each study group, customized for your enhanced group studying experience.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/dog.png" alt="">
@@ -100,8 +100,8 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+                    <h2 class="section-heading">Questions and Answers<!--<br>Font Awesome Icons--></h2>
+                    <p class="lead">Specialized question and answer pages highlight the important discussions in each study group.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/phones.png" alt="">
