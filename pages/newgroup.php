@@ -12,7 +12,7 @@
 	     <div class="row">
 	      <div class="col-lg-5 col-sm-6">
 	        <h2 class="section-heading">&nbsp;</h2>
-	        <form role="form" action="backend/login.php" method="post">
+	        <form role="form" action="backend/newgroup.php" method="post">
 	            <div class="form-group">
 	                <label for="Group-Name">Group Name:</label>
 	              <input type="Group-Name" class="form-control" id="Group-Name" name="Group-Name">
@@ -27,9 +27,10 @@
 	            </div>
 	            <div class="form-group">
 	               <label for="Date-Time">Date/Time:</label>
-	             <input type="Date-Time" class="form-control" id="Date-Time" name="Date-Time">
+	             <input type="Date-Time" class="form-control" data-format="dd/MM/yyyy hh:mm:ss" type="text" id="Date-Time" name="Date-Time">
+	             <!-- <input data-format="dd/MM/yyyy hh:mm:ss" type="text"></input> -->
 	              <div class='input-group date' id='datetimepicker1'>
-                    <!-- <input type='text' class="form-control" /> --><br />
+                    <!-- <input type='text' class="form-control" /> -->
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
@@ -55,7 +56,7 @@
 	      <script type="text/javascript">
             $(function () {
                 $('#datetimepicker1').datetimepicker({
-                    // locale: 'ru'
+                    // locale: 'en'
                 });
             });
           </script>
