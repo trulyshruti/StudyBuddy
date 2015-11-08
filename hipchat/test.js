@@ -2,15 +2,8 @@ var http = require('http'),
 	qs = require("querystring"),
 	easymongo = require('./easymongo.js');
 
-//console.log(easymongo.Mongoclient)
-easymongo.insert("QAs", { question: "asdfghj", answer: "qwertyutu" });
-easymongo.find("QAs");
-
 
 http.createServer(function (request, response) {
-
-	// Get parameters from request
-	console.log("Request's headers: " + JSON.stringify(request.headers));
 
 	var body = ""; var data = "";
 	request.on('data', function(chunk) {
@@ -19,7 +12,7 @@ http.createServer(function (request, response) {
 
 	request.on("end", function() {
 		data = JSON.parse(body);//qs.parse(body));
-		console.log(data.event);
+		console.log(data);
 	});
 
 	console.log("Method: " + request.method);
