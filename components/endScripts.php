@@ -20,14 +20,11 @@
       			language: 'en',
       			pick12HourFormat: true
     		});
-<<<<<<< HEAD
     		
     		$('#datetimepicker3').datetimepicker({
 		      pick12HourFormat: true,
 		      pickDate: false
 		    });
-=======
->>>>>>> origin/master
   		});
   	</script>
   	<!-- END DATE TIME PICKER FUNCTION CODE-->
