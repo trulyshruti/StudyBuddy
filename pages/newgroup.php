@@ -26,7 +26,6 @@
 	             <input type="Description" class="form-control" id="Description" name="Description">
 	            </div>
 	            <div class="form-group">
-<<<<<<< HEAD
 	               <label for="Date-Time">Date:</label>
 	             	<div id="datetimepicker" class="input-append">
 				  		<div class="input-group">
@@ -48,9 +47,6 @@
 								  	</div>
 								</div>
                  </div>	
-                 	
-                 
-=======
 	               <label for="Date-Time">Date/Time:</label>
 	             <input type="Date-Time" class="form-control" data-format="dd/MM/yyyy hh:mm:ss" type="text" id="Date-Time" name="Date-Time">
 	             <!-- <input data-format="dd/MM/yyyy hh:mm:ss" type="text"></input> -->
@@ -69,7 +65,6 @@
     					});
   					});
   				</script>
->>>>>>> origin/master
 	            <div class="form-group">
 	               <label for="Days">Days:</label>
 	             <input type="Days" class="form-control" id="Days" name="Days">
