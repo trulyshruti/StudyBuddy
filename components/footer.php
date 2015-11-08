@@ -10,6 +10,7 @@
                         <li>
                             <a href="#">Home</a>
                         </li>
+                        <!--
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
                             <a href="#about">About</a>
@@ -22,6 +23,7 @@
                         <li>
                             <a href="#contact">Contact</a>
                         </li>
+                        -->
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
                 </div>
