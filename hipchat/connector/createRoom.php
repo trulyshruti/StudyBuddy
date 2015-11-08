@@ -1,5 +1,4 @@
 <?php
-
 function createRoom($room_name, $topic)
 {
 	$authorization = "Bearer HZAhUTcb9qAXxE3HGHsMZCat8In9LfZajEaEPQqO";
@@ -40,7 +39,7 @@ function createRoom($room_name, $topic)
 	return $response;
 }
 
-
+/*
 // Get arguments
 $roomName = (isset($_POST["roomName"]) && $_POST["roomName"] != "") ? $_POST["roomName"] : $argv[1];
 $topic = (isset($_POST["roomName"]) && $_POST["roomName"] != "") ? $_POST["topic"] : $argv[2];
@@ -55,6 +54,6 @@ if ($roomName == "" || $topic == "") {
 
 $response = createRoom($roomName, $topic);
 
-echo $response;
+echo $response;*/
 
 ?>
