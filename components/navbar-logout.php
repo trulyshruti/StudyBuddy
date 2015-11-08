@@ -17,11 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<<<<<<< HEAD
-                <a class="navbar-brand topnav" href="./">StudyBuddy</a>
-=======
                 <a class="navbar-brand topnav" href="#">StudyBuddy</a>
->>>>>>> origin/master
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -37,44 +33,9 @@
                         <a href="#contact">Contact</a>
                     </li>
                     -- END DEFAULT NAVBAR -->
-<<<<<<< HEAD
-                    <?php 
-                    	
-                    	session_start();
-						if($_SESSION['username'] == ""){
-							echo "
-									
-									<li>
-				                        <a href='?p=login'>Log In</a>
-				                    </li>
-				                    <li>
-				                        <a href='?p=signup'>Sign Up</a>
-				                    </li>
-
-								 ";
-						} else{
-							echo "
-									
-									<li>
-				                        <a href='?p=myaccount'>Hi, ".$_SESSION['fname']."</a>
-				                    </li>
-				                    <li>
-				                        <a href='?p=logout'>Logout</a>
-				                    </li>
-				                    
-				                    ";
-						}
-                    	
-                    ?>
-                    
-=======
                     <li>
-                        <a href="login.php">Log In</a>
+                        <a href="backend/logout.php">Log Out</a>
                     </li>
-                    <li>
-                        <a href="signup.php">Sign Up</a>
-                    </li>
->>>>>>> origin/master
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
