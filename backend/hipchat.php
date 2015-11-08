@@ -103,6 +103,11 @@ class Hipchat {
 		return ((new Hipchat())->get(Hipchat::$USER."/".$userID));		
 	}
 
+
+
+	/************** SEND MESSAGES TO ROOM *********/
+	
+
 }
 
 ?>

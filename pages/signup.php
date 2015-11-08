@@ -1,5 +1,7 @@
 <?php
 	
+	require_once("/StuddyBuddy/backend/hipchat.php");
+	
 	session_start();
 	if($_SESSION['username'] != ""){
 		header("Location: ?p=dashboard");
@@ -13,20 +15,31 @@
 		$lname = strip_tags($_POST['last_name']);
 		$email = strip_tags($_POST['email']);
 		
-		include("backend/input_filter.php");
-		$filter = new InputFilter();
-		if($filter->isFilled(array($user, $pass, $fname, $lname, $email))){
-			include("backend/mysqli_connection.php");
-			
-			$q = "INSERT INTO users (username, password, first_name, last_name, email) VALUES ('$user', '".md5($pass)."', '$fname', '$lname', '$email')";
-			$r = @mysqli_query($dbc, $q);
-			
-			if($r){
-				$GLOBALS['status'] = "<p class='success-msg'>Sign Up Successfull</p>";
-			} else{
-				$GLOBALS['status'] = "<p class='error-msg'>There Was a Problem Signing Up</p>";
+		if(strlen($pass) >= 8){
+			include("backend/input_filter.php");
+			$filter = new InputFilter();
+			if($filter->isFilled(array($user, $pass, $fname, $lname, $email))){
+				include("backend/mysqli_connection.php");
+				
+				$q = "INSERT INTO users (username, password, first_name, last_name, email) VALUES ('$user', '".md5($pass)."', '$fname', '$lname', '$email')";
+				$r = @mysqli_query($dbc, $q);
+				
+				if($r){
+					$response = Hipchat::createUser($fname." ".$lname, $user, $pass, $email);
+					if($response->error){
+						$GLOBALS['status'] = "<p class='error-msg'>There Was a Problem Signing Up</p>";
+					} else{
+						header("?p=login");
+					}
+				} else{
+					$GLOBALS['status'] = "<p class='error-msg'>There Was a Problem Signing Up</p>";
+				}
 			}
+		} else{
+			$GLOBALS['status'] = "<p class='error-msg'>There Was a Problem Signing Up</p>";
 		}
+		
+
 		
 	}
 	
@@ -41,23 +54,23 @@
 	        <form role="form" action="#" method="post">
 	            <div class="form-group">
 	               <label for="first_name">First Name:</label>
-	             <input type="first_name" class="form-control" id="first_name" name="first_name">
+	             <input type="first_name" class="form-control" id="first_name" name="first_name" maxlength="20">
 	            </div>
 	            <div class="form-group">
 	               <label for="last_name">Last Name:</label>
-	             <input type="last_name" class="form-control" id="last_name" name="last_name">
+	             <input type="last_name" class="form-control" id="last_name" name="last_name" maxlength="20">
 	            </div>
 	            <div class="form-group">
 	               <label for="email">Email:</label>
-	             <input type="email" class="form-control" id="email" name="email">
+	             <input type="email" class="form-control" id="email" name="email" maxlength="60">
 	            </div>
 	            <div class="form-group">
 	                <label for="username">Username:</label>
-	                <input type="username" class="form-control" id="username" name="username">
+	                <input type="username" class="form-control" id="username" name="username" maxlength="20">
 	            </div>
 	            <div class="form-group">
 	               <label for="password">Password:</label>
-	             <input type="password" class="form-control" id="password" name="password">
+	             <input type="password" class="form-control" id="password" name="password" maxlength="20">
 	            </div>
 	            <button type="submit" class="btn btn-default">Submit</button>
 	        </form>

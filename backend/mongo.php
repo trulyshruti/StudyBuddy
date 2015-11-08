@@ -37,8 +37,14 @@ class EasyMongo {
 		return $result;
 	}
 
-	public function insert($data) {
+	public function insert($collection, $data) {
+		$this->useCollection($collection);
 		$this->current_collection->insert($data);
+	}
+
+	public function update($collection, $data, $query) {
+		$this->useCollection($collection);
+		$this->current_collection->update($query, $data);
 	}
 }
 

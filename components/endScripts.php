@@ -2,8 +2,8 @@
 
 ?>
 	
-    
-
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0Z26oStJlYOC9H0aUIhqzbrU-gyAbNHc&signed_in=true&callback=initMap" async defer></script>
+	
     <!-- jQuery -->
     <script src="/js/jquery.js"></script>
 
@@ -28,6 +28,8 @@
   		});
   	</script>
   	<!-- END DATE TIME PICKER FUNCTION CODE-->
+  	
+  	<script src="/js/geolocation.js"></script>
 
 </body>
 

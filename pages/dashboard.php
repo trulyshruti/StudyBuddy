@@ -11,7 +11,9 @@
 			<div class="col-sm-8">
 				<h1 style="margin:0;">Dashboard</h1>
 				<hr>
-				<?php include("backend/loadgroups.php"); ?>
+				<h3>Recent Groups</h3>
+				<div id="grouplist"></div>
+				<center><img id="loading" src="img/loading.gif" alt="loading" style="width:200px;"></center>
 			</div>
 			
 			<div class="col-sm-4">
