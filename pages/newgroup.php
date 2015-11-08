@@ -26,6 +26,7 @@
 	             <input type="Description" class="form-control" id="Description" name="Description">
 	            </div>
 	            <div class="form-group">
+<<<<<<< HEAD
 	               <label for="Date-Time">Date:</label>
 	             	<div id="datetimepicker" class="input-append">
 				  		<div class="input-group">
@@ -49,6 +50,26 @@
                  </div>	
                  	
                  
+=======
+	               <label for="Date-Time">Date/Time:</label>
+	             <input type="Date-Time" class="form-control" data-format="dd/MM/yyyy hh:mm:ss" type="text" id="Date-Time" name="Date-Time">
+	             <!-- <input data-format="dd/MM/yyyy hh:mm:ss" type="text"></input> -->
+	              <div class='input-group date' id='datetimepicker'>
+                    <!-- <input type='text' class="form-control" /> -->
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                 </div>
+	            </div>
+				<script type="text/javascript">
+	    			$(function() {
+    					$('#datetimepicker').datetimepicker({
+      						language: 'en',
+      						pick12HourFormat: true
+    					});
+  					});
+  				</script>
+>>>>>>> origin/master
 	            <div class="form-group">
 	               <label for="Days">Days:</label>
 	             <input type="Days" class="form-control" id="Days" name="Days">
