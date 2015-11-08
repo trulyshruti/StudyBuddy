@@ -11,7 +11,7 @@
 	    <div class="container">
 	     <div class="row">
 	      <div class="col-lg-5 col-sm-6">
-	        <h2 class="section-heading">&nbsp;</h2>
+	        <h2 class="section-heading">Create New Group</h2>
 	        <form role="form" action="backend/newgroup.php" method="post">
 	            <div class="form-group">
 	                <label for="Group-Name">Group Name:</label>
