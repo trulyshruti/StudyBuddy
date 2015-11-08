@@ -44,18 +44,9 @@
 								  		<span class="input-group-btn add-on">
 							        		<button class="btn webBtn" data-time-icon="icon-time" data-date-icon="icon-calendar"><span class="glyphicon glyphicon-time"></span></button>
 							      		</span>
-								  	</div>
-								</div>
-                 </div>	
-	               <label for="Date-Time">Date/Time:</label>
-	             <input type="Date-Time" class="form-control" data-format="dd/MM/yyyy hh:mm:ss" type="text" id="Date-Time" name="Date-Time">
-	             <!-- <input data-format="dd/MM/yyyy hh:mm:ss" type="text"></input> -->
-	              <div class='input-group date' id='datetimepicker'>
-                    <!-- <input type='text' class="form-control" /> -->
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                 </div>
+						</div>
+					</div>
+
 	            </div>
 				<script type="text/javascript">
 	    			$(function() {
