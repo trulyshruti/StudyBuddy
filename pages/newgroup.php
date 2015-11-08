@@ -11,7 +11,7 @@
 	    <div class="container">
 	     <div class="row">
 	      <div class="col-lg-5 col-sm-6">
-	        <h2 class="section-heading">&nbsp;</h2>
+	        <h2 class="section-heading">Create New Group</h2>
 	        <form role="form" action="backend/newgroup.php" method="post">
 	            <div class="form-group">
 	                <label for="Group-Name">Group Name:</label>
@@ -26,7 +26,11 @@
 	             <input type="Description" class="form-control" id="Description" name="Description">
 	            </div>
 	            <div class="form-group">
+<<<<<<< HEAD
 	               <label for="Date-Time">Date:</label>
+=======
+	            	<label for="Date-Time">Date:</label>
+>>>>>>> origin/master
 	             	<div id="datetimepicker" class="input-append">
 				  		<div class="input-group">
 							<input class="form-control" data-format="MM/dd/yyyy" placeholder="pick a date" name="date" type="text" value="11/08/2015" style="height:46px;">
@@ -38,17 +42,33 @@
 	             
                  </div>
                  <div class="form-group">
+                 	<label for="Date-Time">Time:</label>
                  	<div id="datetimepicker3" class="input-append">
 				  		<div class="input-group">
 										<input class="form-control" data-format="hh:mm" placeholder="pick a start time" name="start" type="text" value="4:07 am" style="height:46px;">
 								  		<span class="input-group-btn add-on">
 							        		<button class="btn webBtn" data-time-icon="icon-time" data-date-icon="icon-calendar"><span class="glyphicon glyphicon-time"></span></button>
 							      		</span>
+<<<<<<< HEAD
 								  	</div>
 								</div>
                  </div>	
                  	
                  
+=======
+						</div>
+					</div>
+
+	            </div>
+				<script type="text/javascript">
+	    			$(function() {
+    					$('#datetimepicker').datetimepicker({
+      						language: 'en',
+      						pick12HourFormat: true
+    					});
+  					});
+  				</script>
+>>>>>>> origin/master
 	            <div class="form-group">
 	               <label for="Days">Days:</label>
 	             <input type="Days" class="form-control" id="Days" name="Days">
