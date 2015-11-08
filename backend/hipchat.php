@@ -64,6 +64,8 @@ class Hipchat {
 		return curl_exec($this->curl);
 	}
 
+	/*******  ROOM OPERATIONS  ************/
+
 	public static $ROOM = "/room";
 
 	public static function createRoom($roomName, $topic) {
@@ -72,6 +74,35 @@ class Hipchat {
 			"topic" => $topic
 		]));
 	}
+
+	public static function listAllRooms() {
+		return ((new Hipchat())->get(Hipchat::$ROOM));	
+	}
+
+
+	// $room:  Room's ID or name
+	public static function listRoom($room) {
+		return ((new Hipchat())->get(Hipchat::$ROOM."/".$room));
+	}
+
+
+	/*************** USER OPERATIONS  **********/
+	public static $USER = "/user";
+
+	public static function createUser($fullName, $username, $password, $email) {
+		return ((new Hipchat())->post(Hipchat::$USER, [
+			"name" => $fullName,
+			"title" => $username,
+			"mention_name" => $username,
+			"password" => $password,
+			"email" => $email
+		]));
+	}
+
+	public static function listUser($userID) {
+		return ((new Hipchat())->get(Hipchat::$USER."/".$userID));		
+	}
+
 }
 
 ?>
