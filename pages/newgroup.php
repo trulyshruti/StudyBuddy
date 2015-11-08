@@ -26,7 +26,7 @@
 	             <input type="Description" class="form-control" id="Description" name="Description">
 	            </div>
 	            <div class="form-group">
-	               <label for="Date-Time">Date:</label>
+	            	<label for="Date-Time">Date:</label>
 	             	<div id="datetimepicker" class="input-append">
 				  		<div class="input-group">
 							<input class="form-control" data-format="MM/dd/yyyy" placeholder="pick a date" name="date" type="text" value="11/08/2015" style="height:46px;">
@@ -38,6 +38,7 @@
 	             
                  </div>
                  <div class="form-group">
+                 	<label for="Date-Time">Time:</label>
                  	<div id="datetimepicker3" class="input-append">
 				  		<div class="input-group">
 										<input class="form-control" data-format="hh:mm" placeholder="pick a start time" name="start" type="text" value="4:07 am" style="height:46px;">
