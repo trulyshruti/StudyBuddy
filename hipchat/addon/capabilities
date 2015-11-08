@@ -1,0 +1,24 @@
+{
+  "name": "StuddyBuddy Integration",
+  "description": "StuddyBuddy complementary HipChat Integration",
+  "key": "https://raw.githubusercontent.com/trulyshruti/StudyBuddy/master/hipchat/addon/capabilities",
+  "links": {
+    "homepage": "http://45.55.47.173/",
+    "self": "https://raw.githubusercontent.com/trulyshruti/StudyBuddy/master/hipchat/addon/capabilities"
+  },
+  "capabilities": {
+    "hipchatApiConsumer": {
+      "scopes": [
+        "send_notification"
+      ],
+      "webhook": [
+        {
+          "event": "room_message",
+          "pattern": "^\\/[qQcCaA]",
+          "url": "http://45.55.47.173:8079/",
+          "name": "StuddyBuddy"
+        }
+      ]
+    }
+  }
+}

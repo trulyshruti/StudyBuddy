@@ -5,7 +5,7 @@
 	$type = strip_tags($_GET['t']);
 	
 	if($query != ""){
-		$query = "WHERE name LIKE '%{$query}%'";
+		$query = "WHERE name LIKE '%{$query}%' OR description LIKE '%{$query}%'";
 	}
 	
 	if($type != ""){
@@ -16,7 +16,7 @@
 		$numberToOutput = "5";
 	}
 	
-	include("mysqli_connection.php");
+	include("backend/mysqli_connection.php");
 	
 	$q = "SELECT * FROM groups $query $type LIMIT $numberToOutput";
 	$r = @mysqli_query($dbc, $q);
@@ -25,13 +25,15 @@
 		while($row = $r->fetch_assoc()) {
 			echo "
 					<div class='panel well'>
-						<a href='?p=group&id=".$row['id']."'<strong>".$row['name']."</strong><br>
-						<p>".$row['description']."</p>
+						<strong><a href='?p=group&id=".$row['id']."'>".$row['name']."</a></strong> <span style='font-size:10px;'>in ".$row['subject']."</span><br>
+						<p style='margin:0;'>".$row['description']."</p>
+						<p style='font-size:10px;'>".$row['meeting_date']." from ".$row['meeting_time_start']." to ".$row['meeting_time_end']." on ".$row['meeting_days']."</p>
 					</div>
 				";	
 		}
 	} else{
-		echo "
+		if($query != ""){
+			echo "
 				
 				Your search - $query - did not match any groups.
 				<br>
@@ -44,7 +46,8 @@
 				</ul>
 		
 		
-			 ";
+			 ";	
+		}
 	}
 	
 	

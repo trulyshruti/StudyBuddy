@@ -17,14 +17,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<<<<<<< HEAD
                 <a class="navbar-brand topnav" href="./">StudyBuddy</a>
-=======
-                <a class="navbar-brand topnav" href="#">StudyBuddy</a>
->>>>>>> origin/master
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            	<form class="navbar-form navbar-right" action="#" method="GET" role="search">
+			        <div class="form-group">
+			          <input type="hidden" name="p" value="search">
+			          <input type="text" name="q" class="form-control" placeholder="Search" value="<?php echo strip_tags($_GET['q']) ?>">
+			        </div>
+			        <button type="submit" class="btn btn-default">Submit</button>
+			    </form>
+            	
                 <ul class="nav navbar-nav navbar-right">
                     <!-- BEGIN DEFAULT NAVBAR --
                     <li>
@@ -37,7 +41,6 @@
                         <a href="#contact">Contact</a>
                     </li>
                     -- END DEFAULT NAVBAR -->
-<<<<<<< HEAD
                     <?php 
                     	
                     	session_start();
@@ -67,15 +70,8 @@
                     	
                     ?>
                     
-=======
-                    <li>
-                        <a href="login.php">Log In</a>
-                    </li>
-                    <li>
-                        <a href="signup.php">Sign Up</a>
-                    </li>
->>>>>>> origin/master
                 </ul>
+                
             </div>
             <!-- /.navbar-collapse -->
         </div>
