@@ -1,5 +1,11 @@
 var http = require('http'),
-	qs = require("querystring");
+	qs = require("querystring"),
+	easymongo = require('./easymongo.js');
+
+//console.log(easymongo.Mongoclient)
+easymongo.insert("QAs", { question: "asdfghj", answer: "qwertyutu" });
+easymongo.find("QAs");
+
 
 http.createServer(function (request, response) {
 
